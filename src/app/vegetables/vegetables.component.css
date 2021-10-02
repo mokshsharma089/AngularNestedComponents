@@ -1,0 +1,7 @@
+table{
+    border:2px solid rgb(22, 189, 63);
+    width: 100%
+}
+th, td {
+    border: 1px solid rgb(211, 53, 53);
+  }

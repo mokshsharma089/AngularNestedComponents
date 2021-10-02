@@ -1,0 +1,19 @@
+<h3>Vegetable Section</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Veggie</th>
+            <th>Price</th>
+            <th>Quantity Left</th>
+            <th>Buy </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let veg of veggies">
+            <td>{{veg.title}}</td>
+            <td>{{veg.price|currency:"INR"}}</td>
+            <td>{{veg.quantity}}</td>
+            <td><button (click)="buy(veg.title)">BUY</button></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,22 @@
+#navbar{
+    height: 50px;
+    font-family: cursive;
+    background-color: #68d4a1;
+    color:#ffe96b;
+    text-align: center;
+    margin-bottom: 20px;;
+}
+.center{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #a2f2ea;
+    text-align: center;
+    /* border:5px solid #3d1311; */
+}
+.banner{
+    border-radius: 5%;
+    margin-left: 33%;
+    margin-bottom: 50px;
+    width:300px;
+    height:300px;
+    background-size: cover;
+}

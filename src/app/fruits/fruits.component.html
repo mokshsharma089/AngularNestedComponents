@@ -1,0 +1,38 @@
+<style>
+    table{
+    border:2px solid white;
+    width: 100%
+}
+th, td {
+    border: 1px solid rgb(15, 10, 10);
+  }
+</style>
+<h3>Fruit Section</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Fruit</th>
+            <th>Price</th>
+            <th>Quantity Left</th>
+            <th>Buy </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let f of fruits">
+            <td>{{f.title}}</td>
+            <td>{{f.price|currency:"INR"}}</td>
+            <td>{{f.quantity}}</td>
+            <td><button (click)="buy(f.title)">BUY</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<div>
+    <h2>Fruit Search Results for Orange Hardcoded in App.component.ts</h2>
+    <table>
+        <tr *ngFor="let f of fruitSearchResult">
+            <td>{{f.title}}</td>
+            <td>{{f.price|currency:"INR"}}</td>
+        </tr>
+    </table>
+</div>
